@@ -8,7 +8,7 @@ const BankCard = ({ account, userName, showBalance=true }: CreditCardProps) => {
         <Link href="/" className="bank-card">
             <div className="bank-card_content">
                 <div>
-                    <h1 className="text-16 font-semibold text-white">
+                    <h1 className="text-14 font-semibold text-white">
                         {account.name || userName}
                     </h1>
 
@@ -19,17 +19,17 @@ const BankCard = ({ account, userName, showBalance=true }: CreditCardProps) => {
 
                 <article className="flex flex-col gap-2">
                     <div className="flex justify-between">
-                        <h1 className="text-12 font-semibold text-white">
+                        <h1 className="text-10 font-semibold text-white">
                             {userName}
                         </h1>
 
-                        <h2 className="text-12 font-semibold text-white">
+                        <h2 className="text-10 font-semibold text-white">
                               ●● / ●●
                         </h2> 
                     </div>
 
-                    <p className="tsxt-14 font-semibold tracking-[1.1px] text-white">
-                        ●●●● ●●●● ●●●● <span className="text-16">
+                    <p className="text-10 font-semibold tracking-[1.1px] text-white">
+                        ●●●● ●●●● ●●●● <span className="text-12">
                             1234
                         </span>
                     </p>

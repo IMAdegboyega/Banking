@@ -6,6 +6,7 @@ import { cn } from "@/lib/utils"
 import Image from "next/image"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
+import Footer from "./Footer"
 
 const Sidebar = ({ user }: SiderbarProps) => {
 
@@ -22,7 +23,7 @@ const Sidebar = ({ user }: SiderbarProps) => {
                         alt="Horizon logo"
                         className="size-[24px] max-xl:size-14"
                     />
-                    <h1 className="sidebar-logo">Horizon</h1>
+                    <h1 className="sidebar-logo">TREMAD Bank</h1>
                 </Link>
 
                 {sidebarLinks.map((item) => {
@@ -35,7 +36,7 @@ const Sidebar = ({ user }: SiderbarProps) => {
                                 <Image
                                     src={item.imgURL}
                                     alt="item.label"
-                                    fill
+                                    fill 
                                     className={cn({
                                         'brightness-[3] invert-0': isActive
                                     })}
@@ -57,7 +58,9 @@ const Sidebar = ({ user }: SiderbarProps) => {
 
             </nav>
 
-            FOOTER
+            <Footer 
+                user = {user}
+            />
 
         </section>
     )
